@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-barcode-scanner-ios" version="1.0.0">
+	<name>cordova-barcode-scanner-ios</name>
+	<description>Barcode Scanner Plugin</description>
+	<license>Apache 2.0</license>
+	<keywords>cordova,barcode,Scanner</keywords>
+	<js-module src="www/index.js" name="iosscanner">
+		<clobbers target="window.plugins.iosscanner" />
+	</js-module>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+	<platform name="ios">
+        <framework src="Foundation.framework" />
+        <framework src="AVFoundation.framework" />
+        <framework src="UIKit.framework" />
+		<config-file target="config.xml" parent="/*">
+			<feature name="iOSScanner">
+				<param name="ios-package" value="CDViOSScanner"/>
+			</feature>
+		</config-file>
+		<header-file src="src/ios/CDViOSScanner.h" />
+		<source-file src="src/ios/CDViOSScanner.m" />
+	</platform>
+</plugin>
