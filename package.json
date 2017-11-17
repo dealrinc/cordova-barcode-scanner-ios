@@ -1,0 +1,27 @@
+{
+  "name": "cordova-barcode-scanner-ios",
+  "version": "1.0.0",
+  "description": "Barcode Scanner Plugin",
+  "cordova": {
+    "id": "cordova-barcode-scanner-ios",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insightautos/cordova-barcode-scanner-ios.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Forrest Middleton",
+  "license": "MIT"
+}
